@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700&display=swap');
+*{
+    font-family:'Nunito Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body{
+    background: #f7f7f7;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #020110;
+    padding: 2rem 5%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 7rem;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-left: 3rem;
+}
+.navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 35px;
+}
+.navbar a:hover{
+    color: #e86608;
+}
+section{
+    padding: 2rem 9%;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 4rem;
+    margin-top: 100px;
+    background-position: center;
+}
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6rem;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+    border-radius: 40%;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    animation: float 2s linear infinite;
+}
+.contents h3{
+    font-size: 5rem;
+}
+.contents p{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.heading span{
+    color: #e86608;
+}
+.homes span{
+    color: #25e100;
+}
+.homes .two{
+    color: #ee2309;
+}
+.homes .one{
+    color: #ffea03;
+}
+.dishes .container{
+    display: flex;
+    gap: 1.5rem;
+}
+.container .box:hover{
+    transform: scale(2);
+}
+.recipes-list img:hover{
+    transform: scale(1.3);
+}
+.dishes .container .box{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: 1rem solid rgba(0,0,0,.1);
+    cursor: pointer;  
+    border-radius: .5rem;
+}
+.dishes .heading{
+    text-align: center;
+    margin: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    font-size: 5rem;
+}
+.dishes .container .box img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1.5rem 0;
+    align-items: center;
+}
+.recipes-container .tags-container h4{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+}
+.tags-container span{
+    color: #e86608;
+}
+.tags-container .tags-list button{
+    font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50rem;
+    margin-top: 5rem;
+}
+.recipes-list .recipe .img{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.recipes-list {
+    display: flex;
+    gap: 35rem;
+}
+.recipes-list  h5{
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.recipes-list  p{
+    font-size: 1.7rem;
+    margin-left: 3rem; 
+}
+.recipes-list  h5:hover{
+    color: #e86608;
+}
+.recipe{
+    flex: 1;
+}
+.tags-list {
+    display: flex;
+    gap: 48rem;
+}
+.tags-list button {
+    color:#fff;
+    border-radius: .5rem;
+}
+.tags-list button a{
+    padding: .5rem;
+}
+.tags-list button a:hover{
+    background-color: #e86608;
+    border-radius: 2rem;
+}
+.recipes-list .recipe p{
+    margin-top: 1rem;
+}
+.contact-form {
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+.form-container span{
+    color: #e86608;
+}
+h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+    font-size: 2rem
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.send {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.send:hover {
+    background-color: #e86608;
+}
+.footer {
+    background-color: #e86608;
+    padding: 20px;
+    color: #fff;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-left, .footer-right {
+    flex: 1;
+}
+  
+h4 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+.footer-left p{
+    font-size: 2rem;
+}
+.footer-right li{
+    list-style: none;
+    font-size: 3rem;
+    align-items: center;
+}
+.footer-right p{
+    font-size: 2rem;
+}
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+  
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.social-media li {
+    margin: 0 10px;
+}
+  
+.social-media a {
+    color: #555;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.social-media a:hover {
+    color: #000;
+}
+  
+.fa-instagram,
+.fa-linkedin {
+    transition: color 0.3s ease-in-out;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform:translateY(0rem);
+    }
+    100%{
+        transform: translateY(3rem);
+    }
+}
